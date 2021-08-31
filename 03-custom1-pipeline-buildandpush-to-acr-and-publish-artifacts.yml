@@ -46,7 +46,7 @@ stages:
     - task: CopyFiles@2
       inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifests'
-        Contents: 'copy'
+        Contents: '**'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
         OverWrite: true
     # List files from Build Artifact Staging Directory - After Copy
